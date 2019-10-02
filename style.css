@@ -154,7 +154,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 20px 20px 60px;
+        padding: 30px;
     }
 
     .block-right__content-title {
