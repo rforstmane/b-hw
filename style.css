@@ -1,0 +1,113 @@
+/*.main {*/
+    /*display: flex;*/
+/*}*/
+/*.block {*/
+    /*margin: 20px;*/
+/*}*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.block-left__title, .block-right__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0 20px 20px;
+}
+
+.block-left__content {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+}
+
+.block-left__content-container {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    font-size: 17px;
+    transition: transform .2s;
+    margin: 0 20px 20px;
+    background-image:
+            linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(39, 32, 86, 1)),
+            url('Layer 4 copy 3.png');
+    max-width: 413px;
+    width: auto;
+    max-height: 279px;
+    height: 279px;
+
+    background-size: cover;
+    /*background-image:*/
+    /*linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),*/
+    /*url('Layer 4 copy 3.png');*/
+}
+
+.block-left__content-container:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.block-right__content {
+    padding: 20px;
+    border-bottom: 1px solid #007276;
+    background-color: #00999e;
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.block-right__content:last-child {
+    border-bottom: none;
+}
+.block-right__content-title {
+    display: flex;
+    padding-bottom: 20px;
+    align-items: center;
+    flex: 1 0 auto;
+}
+.svg {
+    height: 26px;
+    width: 27px;
+    flex: 0 0 40px;
+}
+.text {
+    font-weight: bold;
+    font-size: 27px;
+    margin-left: 15px;
+    flex: 1 0 auto;
+}
+
+.img-text {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    line-height: 25px;
+    margin: 0 15px;
+}
